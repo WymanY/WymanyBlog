@@ -11,7 +11,7 @@ tags:
 
 #### 1.首先UIView可以响应事件，Layer不可以.
 UIKit使用UIResponder作为响应对象，来响应系统传递过来的事件并进行处理。UIApplication、UIViewController、UIView、和所有从UIView派生出来的UIKit类（包括UIWindow）都直接或间接地继承自UIResponder类。   
- 
+
 在 UIResponder中定义了处理各种事件和事件传递的接口, 而 CALayer直接继承 NSObject，并没有相应的处理事件的接口。  
 
 下面列举一些处理触摸事件的接口
@@ -41,7 +41,7 @@ UIKit使用UIResponder作为响应对象，来响应系统传递过来的事件�
 
 在 CustomView 中重写了    
 
-```  
+```objc
 + (Class)layerClass
 {
     return [CustomLayer class];
@@ -61,25 +61,25 @@ UIKit使用UIResponder作为响应对象，来响应系统传递过来的事件�
 {
     [super setBounds:bounds];
 }
+```
 
-```  
 同样在 CustomLayer中同样重写这些方法。只是 `setCenter`方法改成`setPosition`方法  
 
 我在两个类的初始化方法中都打下了断点
 ![image](http://7xl8rl.com1.z0.glb.clouddn.com/Snip20150820_12.png)
-首先我们会发现，我们在 [view initWithFrame] 的时候调用私有方法【UIView _createLayerWithFrame】去创建 CALayer。
+首先我们会发现，我们在 `[view initWithFrame]` 的时候调用私有方法`[UIView _createLayerWithFrame]`去创建 CALayer。
 
 然后我在创建 View 的时候，在 Layer 和 View 中Frame 相关的所有方法中都加上断点，可以看到大致如下的调用顺序如下  
-
-```
+```objc
 [UIView _createLayerWithFrame]
 [Layer setBounds:bounds]
 [UIView setFrame：Frame]
 [Layer setFrame:frame]
 [Layer setPosition:position]
 [Layer setBounds:bounds]
-
 ```
+
+
 我发现在创建的过程只有调用了 Layer 的设置尺寸和位置的然而并没有调用View 的 `SetCenter` 和 `SetBounds` 方法。
 然后我发现当我修改了 view的 `bounds.size` 或者 `bounds.origin` 的时候也只会调用上边 Layer的一些方法。所以我大胆的猜一下，View 的 Center 和 Bounds 只是直接返回layer 对应的 Position 和 Bounds.
 
@@ -90,7 +90,7 @@ View中frame getter方法，bounds和center，UIView并没有做什么工作；�
 #### 3.UIView主要是对显示内容的管理而 CALayer 主要侧重显示内容的绘制。
 我在 UIView 和 CALayer 分别重写了父类的方法。
 
-```
+```objc
 [UIView drawRect:rect]//UIView    
 
 [CALayer display]//CALayer
