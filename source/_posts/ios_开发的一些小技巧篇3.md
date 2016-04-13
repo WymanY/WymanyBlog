@@ -89,6 +89,7 @@ iamgeAspectRect = {{37.563884156729145, 0},
         mLastScale = [gestureRecognizer scale];  // Store the previous scale factor for the next pinch gesture call
 ```
 
+
  聪明的小伙伴应该一下就知道这个是怎么处理的，唯一需要注意的是 当前的缩放的 scale，最初查的资料是通过  `CGFloat currentScale = [[[gestureRecognizer view].layer valueForKeyPath:@"transform.scale"] floatValue];`来得到的，但是不知道为什么 layer的 transform 的 scale 和 view 的当前的缩放 scale 不一致，我通过 debug，得到 view的 transform 的 a的值和当前的缩放值是一样的，因为工作缘故不能凡事挖的特别透，所以大家想知道为什么 a 就是 scale 值可以自行查阅分享给我。
 
 4.最后再分享给大家一个缩放时，缩放的中心点的问题，绝大部分我们缩放都是以 view 的中心点来缩放的，但是某些情况下我们需要以下面的边不动。譬如下面图像这种
@@ -96,7 +97,7 @@ iamgeAspectRect = {{37.563884156729145, 0},
 
 这种方式，我最早是希望通过缩放的时候同时平移就可以处理了，根据缩放的尺寸，缩放到上面多少就平移下来多少，保持下边不动，但是发现特别麻烦。后来使用 layer 的 anchorPoint 来出来，发现特别简单，唯一需要填的坑就是改变 anchorPoint 的时候，它的 frame 会发生瞬移的变化，天啊噜，还好我完美解决!
 
-```
+```objc
 
     -(void)setAnchorPoint:(CGPoint)anchorPoint forView:(UIView *)view
        {
@@ -129,4 +130,4 @@ iamgeAspectRect = {{37.563884156729145, 0},
 
 当然这种操作是可以使用快捷操作的，熟悉我的人应该都知道我的风格，我把 show blame for line 改成快捷键⌥+c 的操作了（ps:怎么改看我前面的博客）。好了以后有问题及时找到你的同事，质问他你这写的什么垃圾代码，我这种大神都不看不懂。
 ## 结束语
-原来没有用 swift 写演示，最近也是在学，但是没有时间写，本来要写的 storyBoard和 AutoLayout 技巧篇，也是因为最近人写这个太多的，感觉有不少雷同，但是只写出来不同的也写不出来太多，原酿我（后续我会学着写动画，到时给你们带来酷炫的动画哦）！
+原谅我没有用 swift 写演示，最近也是在学，但是没有时间写，本来要写的 storyBoard和 AutoLayout 技巧篇，也是因为最近人写这个太多的，感觉有不少雷同，但是只写出来不同的也写不出来太多，原酿我（后续我会学着写动画，到时给你们带来酷炫的动画哦）！
