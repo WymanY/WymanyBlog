@@ -13,7 +13,7 @@ tags:
 
 ### 1.如何快速的查看一段代码的执行时间。  
 
-```
+```objc
 #define TICK   NSDate *startTime = [NSDate date]
 #define TOCK   NSLog(@"Time: %f", -[startTime timeIntervalSinceNow])
 
@@ -21,12 +21,12 @@ tags:
 
 在想要查看执行时间的代码的地方进行这么处理    
 
-```
+```objc
 
  TICK
  //do your work here
  TOCK
- 
+
 ```
 
 ### 2.如何快速查看一个函数的调用次数，且不添加一句代码。  如下图  

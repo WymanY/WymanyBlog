@@ -2,16 +2,17 @@
 menu:
   主页: /
   所有文章: /archives
-  # 随笔: /tags/随笔
+  随笔: /tags/随笔
+  相册: /instagram
 
 # SubNav
 subnav:
-  github: "#"
-  weibo: "#"
-  rss: "#"
-  zhihu: "#"
+  github: "https://github.com/WymanY"
+  weibo: "http://weibo.com/u/2159267225/home?wvr=5&reason=&retcode="
+  # rss: "#"
+  # zhihu: "#"
   #douban: "#"
-  #mail: "#"
+  # mail: "wuyun768@icloud.com"
   #facebook: "#"
   #google: "#"
   #twitter: "#"
@@ -35,7 +36,7 @@ google_analytics: ''
 favicon: /favicon.png
 
 #你的头像url
-avatar:
+avatar: http://7xl8rl.com1.z0.glb.clouddn.com/blogPotrait.jpeg
 #是否开启分享
 share_jia: true
 share_addthis: false
@@ -50,15 +51,14 @@ tagcloud: true
 #friends: false
 #开启——
 friends:
-  奥巴马的博客: http://localhost:4000/
-  卡卡的美丽传说: http://localhost:4000/
-  本泽马的博客: http://localhost:4000/
-  吉格斯的博客: http://localhost:4000/
-  习大大大不同: http://localhost:4000/
-  托蒂的博客: http://localhost:4000/
+  kissGod的博客: http://www.jianshu.com/users/8d704c0faf00/latest_articles
+  OneV's Den的博客: https://onevcat.com/
+  南峰子的技术博客: http://kittenyang.com/
+  杨萧玉HIT的博客: http://fish.yulingtianxia.com/
+  objccn: http://www.objccn.io/
 
 #是否开启“关于我”。
 #不开启——
 #aboutme: false
 #开启——
-aboutme: 我是谁，我从哪里来，我到哪里去？我就是我，是颜色不一样的吃货…
+aboutme: 记录一切美好的东西，在追求美好事物的道路上循序渐进
