@@ -1,7 +1,7 @@
 ---
-layout: post
-title: 'iOS9 Day-by-Day :: Day 2 :: UI Testing'
-date: '2015-12-30 20:28'
+layout: "post"
+title: "iOS9 Day-by-Day :: Day 2 :: UI Testing"
+date: "2015-12-30 20:28"
 tags:
   - ios9 Day-by Day
   - UI Testing
