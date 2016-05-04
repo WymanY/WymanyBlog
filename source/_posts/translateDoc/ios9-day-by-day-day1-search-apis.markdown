@@ -14,7 +14,7 @@ tags:
 
 在 iOS9之前，你只能根据应用的名称在 **spotlight** 搜索到相应的 apps.随着 Apple 公布出新的 iOS9 Search APIs,用户被允许从他们的 app 中选取一些内容被索引,同时包括如何出现在 spotlight 中，用户点击 spotlight中的内容会发生的行为。
 
-### The 3 APIs
+# The 3 APIs
 
 #### NSUserActivity
 
