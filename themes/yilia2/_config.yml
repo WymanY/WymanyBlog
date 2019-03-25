@@ -36,7 +36,7 @@ google_analytics: ''
 favicon: /favicon.png
 
 #你的头像url
-avatar: http://7xl8rl.com1.z0.glb.clouddn.com/blogPotrait.jpeg
+avatar: https://ws3.sinaimg.cn/large/006tKfTcly1g1evs7c58cj30jg0jgglz.jpg
 #是否开启分享
 share_jia: true
 share_addthis: false
