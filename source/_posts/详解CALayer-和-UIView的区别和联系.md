@@ -8,15 +8,14 @@ tags:
 ### 前言
 前面发了一篇iOS 面试的文章，在说到 UIView 和 CALayer 的区别和联系的时候，被喵神指出没有切中要点，所以这里就 CALayer 和 UIView 这个问题重新整理了下。这里会先分条解释，最后会在文章的结尾给出概括性总结。
 
+<!-- more -->
 
 #### 1.首先UIView可以响应事件，Layer不可以.
 UIKit使用UIResponder作为响应对象，来响应系统传递过来的事件并进行处理。UIApplication、UIViewController、UIView、和所有从UIView派生出来的UIKit类（包括UIWindow）都直接或间接地继承自UIResponder类。   
 
 在 UIResponder中定义了处理各种事件和事件传递的接口, 而 CALayer直接继承 NSObject，并没有相应的处理事件的接口。  
 
-<!-- more -->
 下面列举一些处理触摸事件的接口
-
 
 ```objc
  – (void)touchesBegan:withEvent:

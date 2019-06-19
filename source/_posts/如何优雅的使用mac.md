@@ -1,16 +1,17 @@
 ---
 layout: post
 title: "如何优雅的使用 Mac"
-date: 2014-02-12 08:55
+date: 2015-04-12 08:55
 comments: true
 tags: 
 	- Mac 
 	- Apple电脑
 ---
-#### 1.不使用第三方工具给我们的 Finder 集成一个右键或快捷键拷贝路径的方法
-
-我们经常需要拷贝一个文件的地址，每次拷贝的时候都十分苦恼，如何快速拷贝文件的路径呢。
+![use mac elegant](https://raw.githubusercontent.com/WymanY/PicBed/master/img/elegant_use_mac.png)
+在开发中，学会高效的使用mac，能够给我们的开发效率，和日常娱乐都能得到极大的提供，节省我们日常的时间，节省的时间享受生活。
 <!-- more -->
+#### 1.不使用第三方工具给我们的 Finder 集成一个右键或快捷键拷贝路径的方法
+我们经常需要拷贝一个文件的地址，每次拷贝的时候都十分苦恼，如何快速拷贝文件的路径呢。
 这个时候我们需要使用苹果的 Automator 工具了
 Open Automator>Create Service>choose Utility(实用工具)->copy To ClipBoard ->Choose File Or folders In Finder.>Save(copy Path)
 (大致显示结果如下吧)  

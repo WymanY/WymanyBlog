@@ -7,19 +7,15 @@ tags:
 	- 面试 
 	- iOS
 ---
-### Part1 别人问你你都感觉这尼玛说啥的基础面试题
-
-
-#### 1.1UIWindow和UIView和 CALayer 的联系和区别?
-
+![Interview](https://raw.githubusercontent.com/WymanY/PicBed/master/img/interview.png)
+面试是在开发中必须经历的一环，三分运气七分实力，需要我们日常的总结，同时是考验记忆的能力，毕竟可能平时我们会查很多资料，面试的时候可不会给你机会去查
 <!-- more -->
-> 答：UIView是视图的基类，UIViewController是视图控制器的基类，UIResponder是表示一个可以在屏幕上响应触摸事件的对象；  
-> 
-> UIwindow是UIView的子类，UIWindow的主要作用：一是提供一个区域来显示UIView，二是将事件（event）的分发给UIView，一个应用基本上只有一个UIWindow.  
-> 
-> 万物归根，UIView和CALayer都是的老祖都是NSObjet。可见 UIResponder是用来响应事件的，也就是UIView可以响应用户事件。  
-> 
-> CALayer 和 UIView 的区别：  
+#### 1.1UIWindow和UIView和 CALayer 的联系和区别?
+* UIView是视图的基类，UIViewController是视图控制器的基类，UIResponder是表示一个可以在屏幕上响应触摸事件的对象；   
+* UIwindow是UIView的子类，UIWindow的主要作用：一是提供一个区域来显示UIView，二是将事件（event）的分发给UIView，一个应用基本上只有一个UIWindow.  
+* 万物归根，UIView和CALayer都是的老祖都是NSObjet。可见 UIResponder是用来响应事件的，也就是UIView可以响应用户事件。  
+
+###  CALayer 和 UIView 的区别：  
 > 1.1 UIView的继承结构为: UIResponder : NSObject。
 > CALayer的继承结构为： NSObject。可见 UIResponder是用来响应事件的，也就是UIView可以响应用户事件，CALayer直接从 NSObject继承，因为缺少了UIResponder类，不能响应任何用户事件  
 > 1.2 所属框架,UIView是在 /System/Library/Frameworks/UIKit.framework中定义的,UIKit主要是用来构建用户界面，并且是可以响应事件的。CALayer是在/System/Library/Frameworks/QuartzCore.framework定义的。而且CALayer作为一个低级的，可以承载绘制内容的底层对象出现在该框架中。    
