@@ -36,7 +36,7 @@ google_analytics: ''
 favicon: /favicon.png
 
 #你的头像url
-avatar: https://raw.githubusercontent.com/WymanY/PicBed/master/img/blog_avatar.jpg?token=AC3DHRNUTBVLT2I5HNVXFES5BIO4W
+avatar: https://raw.githubusercontent.com/WymanY/PicBed/master/img/blog_avatar.jpg?token=AC3DHRKSNW7A7JQ35TULISK5BISSC
 #是否开启分享
 share_jia: true
 share_addthis: false
