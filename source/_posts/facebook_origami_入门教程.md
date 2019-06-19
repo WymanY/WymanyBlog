@@ -13,6 +13,7 @@ tags:
 #### 1.Origami 的简介
 
 &nbsp;&nbsp;&nbsp;&nbsp;首先 origami 是 facebook 的一款制作动效的软件，它可以很简单的实现很多动效，可以实现几乎所有的手机上和网页端的动画效果，它相对于其它的动效制作软件更贴近于程序，基本上程序上所支持的手势，基本上 origami 都支持，而且它很好的融入了 facebook 的 [pop动画库](https://github.com/facebook/pop)。
+<!-- more -->
 
 #### 2.Origami 的安装
 

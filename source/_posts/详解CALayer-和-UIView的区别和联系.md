@@ -14,12 +14,16 @@ UIKit使用UIResponder作为响应对象，来响应系统传递过来的事件�
 
 在 UIResponder中定义了处理各种事件和事件传递的接口, 而 CALayer直接继承 NSObject，并没有相应的处理事件的接口。  
 
+<!-- more -->
 下面列举一些处理触摸事件的接口
 
-* – touchesBegan:withEvent:
-* – touchesMoved:withEvent:
-* – touchesEnded:withEvent:
-* – touchesCancelled:withEvent:      
+
+```objc
+ – (void)touchesBegan:withEvent:
+ – (void)touchesMoved:withEvent:
+ – (void)touchesEnded:withEvent:
+ – (void)touchesCancelled:withEvent:      
+```
 
 其实还有一些运动和远程控制事件等等，这里就不一一列举了。
 

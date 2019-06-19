@@ -12,7 +12,7 @@ tags:
 
 #### 1.1UIWindow和UIView和 CALayer 的联系和区别?
 
-
+<!-- more -->
 > 答：UIView是视图的基类，UIViewController是视图控制器的基类，UIResponder是表示一个可以在屏幕上响应触摸事件的对象；  
 > 
 > UIwindow是UIView的子类，UIWindow的主要作用：一是提供一个区域来显示UIView，二是将事件（event）的分发给UIView，一个应用基本上只有一个UIWindow.  

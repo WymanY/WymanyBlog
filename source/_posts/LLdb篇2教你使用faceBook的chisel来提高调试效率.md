@@ -6,6 +6,7 @@ tags: lldb
 这次真是久违的第二篇了，过年的时候一直在帮家里带孩子，顺便用webStorm这个神器重新问下了前端的知识。然后最近刚来北京又是重感冒，又是找房子，整个来说效率极低又苦不堪言。
 
 首先如果使用lldb，最好你要学着使用chisel来提高效率，否则你会浪费很多的时间，除非你自己会写python脚本，自己封装一些lldb的命令。  
+<!-- more -->
 
 ### 安装chisel
 [chisel](https://github.com/facebook/chisel)的安装是十分简单，它是在终端通过brew安装的，具体可以点击链接参考github的安装说明，唯一需要注意的一点就是命令行安装完之后，它会在安装完之后显示出chisel的安装地址path.在执行下面的命令时候要记得替换/path/to/fblldb.py这一块。
