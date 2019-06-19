@@ -1,9 +1,12 @@
 title: Ubuntu Server拷贝SSH到Mac
-date: Apr 30, 2019
-tags:杂记,Linux
+date: '2019-04-04 18:35'
+tags:
+    - Linux
+    - 杂记
 ---
-
+### Ubuntu Server拷贝SSH到Mac
 如何从远程Linux服务器拷贝提供给`Git` 服务器的`SSH RSA`公钥到Mac电脑。
+<!-- more -->
 
 ```
 scp -r remoteVM:.ssh .
