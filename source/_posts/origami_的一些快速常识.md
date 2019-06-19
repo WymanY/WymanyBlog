@@ -9,7 +9,6 @@ tags:
 ---
 ### 1.Origami的基本知识介绍
 &nbsp;&nbsp;&nbsp;&nbsp;Origami 的patch 相当于组件的概念，通过它来构建基本的界面和交互。Patch 也就相当于 PS 中的工具箱，里面包含了创建所有动效的任何组件。
-
 <!-- more -->
 ### 2.快捷键相关操作
 `⌘+⌥+N` 快速创建一个Origami 的文件。    

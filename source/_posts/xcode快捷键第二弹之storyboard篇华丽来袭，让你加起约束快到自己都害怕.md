@@ -10,7 +10,6 @@ title: xcode快捷键第二弹之storyboard篇华丽来袭，让你加起约束�
 ---
 
 这里时隔一周放出第二篇应用，这一阵子一直在忙项目，本来准备一周两篇的节奏，但是现在悲催的改成了一周一篇了。因为老版的程序员都习惯使用纯代码去写一个应用，但是随着苹果的推广，storyBoard的使用越来越方便，随着Xcode6和ios8的出现。size Class 和autoLayout的使用使得布局变得很方便，人们之所以使用纯代码是因为代码可复用，git 管理起来更方便，但是，storyBoard本质是xml,在git 上管理起来也很方便了，而且现在storyBoard只要使用的合理，一样可以做复用。以后估计会推出一篇主要用storyBoard来做的一个小demo。    
-<!-- more -->
 
 这里所用说的storyBoard的好处，都是自己日常使用时感觉的好处，估计有不少缪误之处，但是身边的人用过都说好。这里有@onevcat大神具体的介绍storyBoard的好处，链接如下[让喵神告诉你为啥要用storyBoard](http://onevcat.com/2014/10/ib-customize-view/) ，当然不仅国内大神说好，国际友人（一大神）也做了比较，[让国际友人告诉你storyboards-vs-nibs-vs-custom-code](http://www.toptal.com/ios/ios-user-interfaces-storyboards-vs-nibs-vs-custom-code)，当然我也手动点赞了。  
 
