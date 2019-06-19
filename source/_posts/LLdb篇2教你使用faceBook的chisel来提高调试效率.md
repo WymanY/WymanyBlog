@@ -15,8 +15,6 @@ script fblldb.loadCommandsInDirectory('/magical/
 commands/')
 ```
 
-
-
 如果安装成功的话，那么你就会看到如下图的这些命令。    
 
 ![lldb help](http://m2.img.srcdd.com/farm4/d/2015/0308/22/E835901C12DB9A2018B1FF573B161069_B500_900_500_213.png)
