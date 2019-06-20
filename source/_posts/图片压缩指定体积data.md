@@ -12,7 +12,7 @@ tags: 技巧
 
 ```objc
 // Check if the image size is too large
-if ((imageData.length/1024) >= 1024) {
+if ((imåageData.length/1024) >= 1024) {
 
     while ((imageData.length/1024) >= 1024) {
         NSLog(@"While start - The imagedata size is currently: %f KB",roundf((imageData.length/1024)));
