@@ -2,14 +2,16 @@
 
 menu:
   主页: /
-  随笔: /tags/随笔/
+  所有文章: /archives
+  随笔: /tags/随笔
+  # 相册: /photos
 
 # SubNav
 subnav:
-  github: "#"
-  weibo: "#"
-  rss: "#"
-  zhihu: "#"
+  github: "https://github.com/WymanY"
+  weibo: "http://weibo.com/u/2159267225/home?wvr=5&reason=&retcode="
+  # rss: "#"
+  # zhihu: "#"
   #qq: "#"
   #weixin: "#"
   #jianshu: "#"
@@ -39,17 +41,17 @@ show_all_link: '展开全文'
 # 数学公式
 mathjax: false
 # 是否在新窗口打开链接
-open_in_new: false
+open_in_new: true
 
 # 打赏
 # 打赏type设定：0-关闭打赏； 1-文章对应的md文件里有reward:true属性，才有打赏； 2-所有文章均有打赏
 reward_type: 2
 # 打赏wording
-reward_wording: '谢谢你请我吃糖果'
+reward_wording: '感恩大佬'
 # 支付宝二维码图片地址，跟你设置头像的方式一样。比如：/assets/img/alipay.jpg
-alipay: 
+alipay: /assets/img/alipay.jpg
 # 微信二维码图片地址
-weixin: 
+weixin: /assets/img/wechat.jpeg
 
 # 目录
 # 目录设定：0-不显示目录； 1-文章对应的md文件里有toc:true属性，才有目录； 2-所有文章均显示目录
@@ -65,10 +67,10 @@ top: true
 # Miscellaneous
 baidu_analytics: ''
 google_analytics: ''
-favicon: /favicon.png
+favicon: /assets/img/favicon.ico
 
 #你的头像url
-avatar:
+avatar: https://raw.githubusercontent.com/WymanY/PicBed/master/img/blog_avatar.jpg
 
 #是否开启分享
 share_jia: true
@@ -120,11 +122,10 @@ smart_menu:
   aboutme: '关于我'
 
 friends:
-  友情链接1: http://localhost:4000/
-  友情链接2: http://localhost:4000/
-  友情链接3: http://localhost:4000/
-  友情链接4: http://localhost:4000/
-  友情链接5: http://localhost:4000/
-  友情链接6: http://localhost:4000/
+  kissGod的博客: http://www.jianshu.com/users/8d704c0faf00/latest_articles
+  OneV's Den的博客: https://onevcat.com/
+  南峰子的技术博客: http://kittenyang.com/
+  杨萧玉HIT的博客: http://fish.yulingtianxia.com/
+  objccn: http://www.objccn.io/
 
-aboutme: 很惭愧<br><br>只做了一点微小的工作<br>谢谢大家
+aboutme: 记录一切美好的东西，在追求美好事物的道路上循序渐进
