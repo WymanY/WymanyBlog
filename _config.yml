@@ -96,3 +96,9 @@ deploy:
   branch: master
 
   duoshuo: wymany
+
+
+#Music plugin
+
+aplayer:
+  meting: true
