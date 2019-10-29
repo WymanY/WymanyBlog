@@ -6,9 +6,7 @@ tags:
 ---
 越狱工具推荐MonkeyDev安装[uncover3.6.2](https://github.com/pwn20wndstuff/Undecimus/releases),目前越狱系统最高支持12.4版本。
 ![iphoneX](https://raw.githubusercontent.com/WymanY/PicBed/master/img/iphoneX.jpg)
-
 <!-- more -->
-
 
 1. 网络修复助手，连个锤子或者NetControl。（越狱后的cydia甚至安装的软件都没网络。
 2. 越狱后电脑端装的软件：ifunbox访问系统文件，系统需要安装AF2
