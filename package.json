@@ -18,6 +18,6 @@
     "hexo-renderer-stylus": "^0.3.3",
     "hexo-server": "^0.3.3",
     "hexo-tag-aplayer": "^3.0.4",
-    "npm": "^6.9.0"
+    "npm": "^6.14.6"
   }
 }
